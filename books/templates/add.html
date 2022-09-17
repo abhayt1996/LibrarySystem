@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add Books</h1>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}
+Book Name:<br>
+<input name="name">
+<br><br>
+Book Genre:<br>
+<input name="genre">
+<br><br>
+Book Price:<br>
+<input name="price">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Books</h1>
+
+
+
+<table border="1">
+{% for x in mybooks %}
+  <tr>
+  <td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+  <td>{{ x.name }}</td>
+  <td>{{ x.genre }}</td>
+<td>{{ x.price }}</td>
+  <td><a href="delete/{{ x.id }}">delete</a></td>
+  </tr>
+{% endfor %}
+</table>
+<p>
+<a href="add/">Add Books</a>
+</p>
+</body>
+</html>
